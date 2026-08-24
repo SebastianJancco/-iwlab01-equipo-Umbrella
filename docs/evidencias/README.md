@@ -8,7 +8,9 @@ Este directorio contiene las evidencias propias del trabajo realizado por el equ
 
 **Descripción:** Mapa visual que presenta las siete áreas del proyecto: usuarios, necesidad, función principal, datos, calidad, seguridad y contexto.
 
-**Evidencia:** <img width="2437" height="559" alt="image" src="https://github.com/user-attachments/assets/9cd09000-a1e5-4ca1-b187-2759fce6f5cf" />
+**Evidencia:**
+<img width="2437" height="559" alt="image" src="https://github.com/user-attachments/assets/9cd09000-a1e5-4ca1-b187-2759fce6f5cf" />
+
 
 ## 2. Análisis observacional – SOLU
 
@@ -24,7 +26,8 @@ Este directorio contiene las evidencias propias del trabajo realizado por el equ
 
 **Fecha:** 24/08/2026
 
-**Evidencia:** <img width="2487" height="1269" alt="image" src="https://github.com/user-attachments/assets/d691a920-5a6a-43c8-8556-bd6be8b517df" />
+**Evidencia:** 
+<img width="2487" height="1269" alt="image" src="https://github.com/user-attachments/assets/d691a920-5a6a-43c8-8556-bd6be8b517df" />
 
 
 ### Evidencia 2.2 – Servicio o prestador
@@ -33,7 +36,8 @@ Este directorio contiene las evidencias propias del trabajo realizado por el equ
 
 **Fecha:** 24/08/2026
 
-**Evidencia:** <img width="2447" height="1257" alt="image" src="https://github.com/user-attachments/assets/5497dcf7-e25e-4fc4-8d87-043b99056c79" />
+**Evidencia:** 
+<img width="2447" height="1257" alt="image" src="https://github.com/user-attachments/assets/5497dcf7-e25e-4fc4-8d87-043b99056c79" />
 
 
 ## 3. Trabajo colaborativo
