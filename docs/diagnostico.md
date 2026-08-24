@@ -93,7 +93,7 @@ La página presenta opciones para explorar y buscar servicios. El usuario puede 
 
 **Captura:** <img width="2444" height="1246" alt="image" src="https://github.com/user-attachments/assets/539fb2ac-a0ae-40c9-ac12-d897cd4ffb4d" />
 <img width="2359" height="1003" alt="image" src="https://github.com/user-attachments/assets/f4dcac99-07e0-4639-a1a2-9298a1a9656a" />
-<img width="2204" height="1041" alt="image" src="https://github.com/user-attachments/assets/d4265a4a-6172-4c7f-bc03-a9f7cea119b4" />
+
 
 ## 3. Riesgos
 
