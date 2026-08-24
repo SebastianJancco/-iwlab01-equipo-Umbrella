@@ -40,36 +40,60 @@ La plataforma será utilizada principalmente desde celulares y computadoras, med
 
 ### Sitio seleccionado
 
-**Nombre:** Pendiente de seleccionar.  
-**URL:** Pendiente de registrar.
+**Nombre:** SOLU  
+**URL:** https://www.solu.pe/
 
 ### Justificación
 
-Pendiente de completar después de seleccionar una página web pública relacionada directamente con el dominio de servicios locales.
+Se seleccionó SOLU porque es una plataforma relacionada directamente con el dominio de servicios locales de nuestro proyecto. Permite observar cómo se presentan los servicios y cómo se facilita la conexión entre personas que necesitan contratar un servicio y prestadores que los ofrecen.
 
 ### Propósito aparente y público objetivo
 
-Pendiente de analizar.
+**Propósito aparente:** Facilitar la búsqueda de servicios y conectar a personas que necesitan realizar un trabajo con prestadores que ofrecen dichos servicios.
+
+**Público objetivo:** Personas que necesitan contratar servicios y profesionales o técnicos que ofrecen servicios.
 
 ### Estructura de navegación y acciones disponibles
 
-Pendiente de analizar.
+La página presenta opciones para explorar y buscar servicios. El usuario puede consultar diferentes categorías, revisar información de los servicios y acceder a información relacionada con los prestadores.
+
+**Acciones observadas:**
+- Buscar servicios.
+- Explorar categorías.
+- Consultar información de los servicios.
+- Revisar información de los prestadores.
+- Acceder a opciones relacionadas con la solicitud o contacto del servicio.
 
 ### Comportamiento en escritorio y dispositivo móvil
 
-Pendiente de observar.
+**Escritorio:** La información se presenta mediante una interfaz adaptada a una pantalla amplia, permitiendo visualizar las principales opciones de navegación y búsqueda.
+
+**Dispositivo móvil:** Se debe verificar mediante la herramienta de dispositivos del navegador si la navegación, los contenidos y los elementos interactivos se adaptan correctamente a una pantalla pequeña.
 
 ### Aspectos positivos
 
-Pendiente de identificar.
+- Presenta los servicios de forma organizada.
+- Facilita la búsqueda de servicios.
+- Permite identificar diferentes tipos de servicios.
+- La propuesta está relacionada directamente con la necesidad de conectar clientes y prestadores.
+- La información puede servir como referencia para el diseño de nuestro proyecto.
 
 ### Oportunidades de mejora
 
-Pendiente de identificar como hipótesis basadas en la observación.
+- Se podría facilitar aún más la comparación entre diferentes prestadores.
+- Se podría mejorar la cantidad de información visible para ayudar al usuario a elegir un prestador.
+- Se podría facilitar el seguimiento de las solicitudes realizadas por los clientes.
+- Se podría mejorar la experiencia del usuario en dispositivos móviles, si durante la observación se identifican dificultades.
 
 ### Evidencia
 
-Se agregará una captura propia del sitio analizado, acompañada de una descripción y fecha.
+**Fecha de observación:** 24/08/2026
+
+**Descripción:** Captura de la página SOLU utilizada para evidenciar la observación de su navegación, presentación de servicios y funcionalidades visibles.
+
+**Captura:** <img width="2444" height="1246" alt="image" src="https://github.com/user-attachments/assets/539fb2ac-a0ae-40c9-ac12-d897cd4ffb4d" />
+<img width="2359" height="1003" alt="image" src="https://github.com/user-attachments/assets/f4dcac99-07e0-4639-a1a2-9298a1a9656a" />
+<img width="2204" height="1041" alt="image" src="https://github.com/user-attachments/assets/d4265a4a-6172-4c7f-bc03-a9f7cea119b4" />
 
 ## 3. Riesgos
 
