@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Registro de clientes en Servilink.">
 
-  <title>Registro de Cliente | Servilink</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Formulario para completar el perfil de cliente en Servilink."
+  >
+
+  <title>Datos del Cliente | Servilink</title>
 
   <link rel="stylesheet" href="styles.css">
+
 </head>
+
 
 <body>
 
@@ -16,7 +28,9 @@
     Saltar al contenido principal
   </a>
 
+
   <header class="site-header">
+
     <div class="header-inner">
 
       <a
@@ -27,7 +41,11 @@
         Servilink
       </a>
 
-      <nav class="primary-nav" aria-label="Navegación principal">
+
+      <nav
+        class="primary-nav"
+        aria-label="Navegación principal"
+      >
 
         <a href="index.html">
           Información General
@@ -54,30 +72,36 @@
         </a>
 
       </nav>
+
     </div>
+
   </header>
 
 
-  <main id="contenido" class="container auth-container">
+  <main
+    id="contenido"
+    class="container auth-container"
+  >
 
     <section
-      class="card auth-card"
-      aria-labelledby="registro-titulo"
+      class="card auth-card auth-card-large"
+      aria-labelledby="datos-titulo"
     >
+
 
       <div class="auth-header">
 
         <p class="eyebrow">
-          Paso 1 de 2
+          Paso 2 de 2
         </p>
 
-        <h1 id="registro-titulo">
-          Crear cuenta como cliente
+        <h1 id="datos-titulo">
+          Completa tus datos personales
         </h1>
 
         <p class="lead">
-          Regístrate para encontrar profesionales
-          y solicitar servicios disponibles en tu zona.
+          Ingresa tus datos para finalizar
+          el registro de tu cuenta en Servilink.
         </p>
 
       </div>
@@ -86,98 +110,121 @@
       <div class="quality-note auth-note">
 
         <strong>
-          Tipo de cuenta: Cliente
+          Datos del cliente
         </strong>
 
         <span>
-          Como cliente podrás buscar trabajadores,
-          revisar sus perfiles y solicitar servicios.
+          Verifica que la información ingresada
+          sea correcta antes de finalizar.
         </span>
 
       </div>
 
 
-      <form
-        id="formRegistro"
-        action="formulario-cliente.html"
-        method="GET"
-        class="form-grid"
-      >
-
-        <div class="form-group">
-
-          <label for="celular">
-            Número de celular
-          </label>
-
-          <input
-            type="tel"
-            id="celular"
-            name="celular"
-            placeholder="Ej. 987654321"
-            pattern="[0-9]{9}"
-            maxlength="9"
-            inputmode="numeric"
-            autocomplete="tel"
-            required
-          >
-
-          <small class="muted">
-            Ingresa un número de celular de 9 dígitos.
-          </small>
-
-        </div>
+      <form id="formCliente" class="form-grid">
 
 
-        <div class="form-group">
+        <div class="form-row">
 
-          <label for="password">
-            Contraseña
-          </label>
+          <div class="form-group">
 
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Ingresa tu contraseña"
-            minlength="8"
-            autocomplete="new-password"
-            required
-          >
+            <label for="nombre">
+              Nombre
+            </label>
 
-          <small class="muted">
-            Debe contener como mínimo 8 caracteres.
-          </small>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej. Juan"
+              autocomplete="given-name"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="apellidos">
+              Apellidos
+            </label>
+
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Ej. Pérez Quispe"
+              autocomplete="family-name"
+              required
+            >
+
+          </div>
 
         </div>
 
 
-        <div class="form-group">
+        <div class="form-row">
 
-          <label for="confirmar-password">
-            Confirmar contraseña
-          </label>
+          <div class="form-group">
 
-          <input
-            type="password"
-            id="confirmar-password"
-            name="confirmar-password"
-            placeholder="Repite tu contraseña"
-            minlength="8"
-            autocomplete="new-password"
-            required
-          >
+            <label for="dni">
+              DNI
+            </label>
+
+            <input
+              type="text"
+              id="dni"
+              name="dni"
+              placeholder="Ej. 12345678"
+              maxlength="8"
+              pattern="[0-9]{8}"
+              inputmode="numeric"
+              required
+            >
+
+            <small class="muted">
+              El DNI debe contener 8 dígitos.
+            </small>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="email">
+              Correo electrónico
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              autocomplete="email"
+              required
+            >
+
+          </div>
 
         </div>
 
 
         <div class="actions auth-actions">
 
+          <a
+            href="registro-cliente.html"
+            class="button button-secondary"
+          >
+            Volver
+          </a>
+
+
           <button
             type="submit"
             class="button"
           >
-            Continuar
+            Finalizar registro
           </button>
 
         </div>
@@ -188,11 +235,8 @@
       <div class="auth-footer">
 
         <p class="muted">
-          ¿Ya tienes una cuenta?
-
-          <a href="login.html" class="text-link">
-            Iniciar sesión
-          </a>
+          Al finalizar podrás buscar y solicitar
+          servicios disponibles en Servilink.
         </p>
 
       </div>
@@ -214,25 +258,20 @@
   <script>
 
     const formulario =
-      document.getElementById("formRegistro");
+      document.getElementById("formCliente");
 
     formulario.addEventListener(
       "submit",
       function(event) {
 
-        const password =
-          document.getElementById("password").value;
+        event.preventDefault();
 
-        const confirmar =
-          document.getElementById("confirmar-password").value;
+        alert(
+          "Registro completado correctamente."
+        );
 
-        if (password !== confirmar) {
-
-          event.preventDefault();
-
-          alert("Las contraseñas no coinciden.");
-
-        }
+        // Cuando tengan login:
+        // window.location.href = "login.html";
 
       }
     );
@@ -240,4 +279,5 @@
   </script>
 
 </body>
+
 </html>
