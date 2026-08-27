@@ -1,165 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Solicitud | Servilink</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Formulario para completar el perfil de cliente en Servilink."
-  >
-
-  <title>Datos del Cliente | Servilink</title>
-
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-
+<link rel="stylesheet" href="styles.css"></head>
 
 <body>
 
-  <a class="skip-link" href="#contenido">
-    Saltar al contenido principal
-  </a>
-
-
   <header class="site-header">
-
     <div class="header-inner">
 
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Servilink, inicio"
-      >
+      <a class="brand" href="Index.html">
         Servilink
       </a>
 
-
-      <nav
-        class="primary-nav"
-        aria-label="Navegación principal"
-      >
-
-        <a href="index.html">
-          Información General
-        </a>
-
-        <a href="solicitud.html">
-          Solicitar Servicio
-        </a>
-
-        <a href="trabajadores.html">
-          Trabajadores Disponibles
-        </a>
-
-        <a href="login.html">
-          Iniciar Sesión
-        </a>
-
-        <a
-          href="registro.html"
-          class="button button-nav"
-          aria-current="page"
-        >
-          Registrarse
-        </a>
-
+      <nav class="primary-nav">
+        <a href="Index.html">Información General</a>
+        <a href="registro-solicitud.html">Solicitar Servicio</a>
+        <a href="trabajadores.html">Trabajadores Disponibles</a>
+        <a href="login.html">Iniciar Sesión</a>
       </nav>
 
     </div>
-
   </header>
 
 
-  <main
-    id="contenido"
-    class="container auth-container"
-  >
+  <main class="solicitud-container">
 
-    <section
-      class="card auth-card auth-card-large"
-      aria-labelledby="datos-titulo"
-    >
+    <section class="solicitud-card">
 
-
-      <div class="auth-header">
+      <div class="solicitud-header">
 
         <p class="eyebrow">
-          Paso 2 de 2
+          Solicitud de servicio
         </p>
 
-        <h1 id="datos-titulo">
-          Completa tus datos personales
-        </h1>
+        <h1>Registrar solicitud</h1>
 
-        <p class="lead">
-          Ingresa tus datos para finalizar
-          el registro de tu cuenta en Servilink.
+        <p>
+          Completa la información para encontrar
+          un prestador disponible en tu zona.
         </p>
 
       </div>
 
 
-      <div class="quality-note auth-note">
+      <form class="form-solicitud">
 
-        <strong>
-          Datos del cliente
-        </strong>
+        <div class="form-group">
 
-        <span>
-          Verifica que la información ingresada
-          sea correcta antes de finalizar.
-        </span>
+          <label for="servicio">
+            Servicio requerido
+          </label>
 
-      </div>
+          <select id="servicio" name="servicio" required>
+
+            <option value="">
+              Selecciona un servicio
+            </option>
+
+            <option value="gasfiteria">
+              Gasfitería
+            </option>
+
+            <option value="electricidad">
+              Electricidad
+            </option>
+
+            <option value="carpinteria">
+              Carpintería
+            </option>
+
+            <option value="limpieza">
+              Limpieza
+            </option>
+
+            <option value="computadoras">
+              Reparación de computadoras
+            </option>
+
+            <option value="pintura">
+              Pintura
+            </option>
+
+            <option value="otro">
+              Otro
+            </option>
+
+          </select>
+
+        </div>
 
 
-      <form id="formCliente" class="form-grid">
+        <div class="form-group">
 
+          <label for="distrito">
+            Distrito
+          </label>
 
-        <div class="form-row">
+          <select id="distrito" name="distrito" required>
 
-          <div class="form-group">
+            <option value="">
+              Selecciona un distrito
+            </option>
 
-            <label for="nombre">
-              Nombre
-            </label>
+            <option value="cusco">Cusco</option>
+            <option value="wanchaq">Wanchaq</option>
+            <option value="santiago">Santiago</option>
+            <option value="san-sebastian">San Sebastián</option>
+            <option value="san-jeronimo">San Jerónimo</option>
+            <option value="saylla">Saylla</option>
+            <option value="poroy">Poroy</option>
 
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ej. Juan"
-              autocomplete="given-name"
-              required
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="apellidos">
-              Apellidos
-            </label>
-
-            <input
-              type="text"
-              id="apellidos"
-              name="apellidos"
-              placeholder="Ej. Pérez Quispe"
-              autocomplete="family-name"
-              required
-            >
-
-          </div>
+          </select>
 
         </div>
 
@@ -168,40 +123,30 @@
 
           <div class="form-group">
 
-            <label for="dni">
-              DNI
+            <label for="fecha">
+              Fecha
             </label>
 
             <input
-              type="text"
-              id="dni"
-              name="dni"
-              placeholder="Ej. 12345678"
-              maxlength="8"
-              pattern="[0-9]{8}"
-              inputmode="numeric"
+              type="date"
+              id="fecha"
+              name="fecha"
               required
             >
-
-            <small class="muted">
-              El DNI debe contener 8 dígitos.
-            </small>
 
           </div>
 
 
           <div class="form-group">
 
-            <label for="email">
-              Correo electrónico
+            <label for="hora">
+              Horario
             </label>
 
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="ejemplo@correo.com"
-              autocomplete="email"
+              type="time"
+              id="hora"
+              name="hora"
               required
             >
 
@@ -210,36 +155,59 @@
         </div>
 
 
-        <div class="actions auth-actions">
+        <div class="form-group">
 
-          <a
-            href="registro-cliente.html"
-            class="button button-secondary"
+          <label for="descripcion">
+            Describe tu problema o necesidad
+          </label>
+
+          <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="6"
+            placeholder="Ej. Tengo una fuga de agua en la cocina y necesito un gasfitero..."
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="contacto">
+            Número de contacto
+          </label>
+
+          <input
+            type="tel"
+            id="contacto"
+            name="contacto"
+            placeholder="Ej. 987654321"
+            pattern="[0-9]{9}"
+            maxlength="9"
+            required
           >
-            Volver
+
+          <small>
+            Los prestadores interesados podrán comunicarse contigo.
+          </small>
+
+        </div>
+
+
+        <div class="form-actions">
+
+          <a href="Index.html" class="button button-secondary">
+            Cancelar
           </a>
 
-
-          <button
-            type="submit"
-            class="button"
-          >
-            Finalizar registro
+          <button type="submit" class="button">
+            Publicar solicitud
           </button>
 
         </div>
 
       </form>
-
-
-      <div class="auth-footer">
-
-        <p class="muted">
-          Al finalizar podrás buscar y solicitar
-          servicios disponibles en Servilink.
-        </p>
-
-      </div>
 
     </section>
 
@@ -247,37 +215,10 @@
 
 
   <footer class="site-footer">
-
     <p>
       Prototipo académico · Ingeniería Web · Proyecto Semestral
     </p>
-
   </footer>
 
-
-  <script>
-
-    const formulario =
-      document.getElementById("formCliente");
-
-    formulario.addEventListener(
-      "submit",
-      function(event) {
-
-        event.preventDefault();
-
-        alert(
-          "Registro completado correctamente."
-        );
-
-        // Cuando tengan login:
-        // window.location.href = "login.html";
-
-      }
-    );
-
-  </script>
-
 </body>
-
 </html>
