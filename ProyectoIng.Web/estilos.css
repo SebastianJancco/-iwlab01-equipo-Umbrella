@@ -1,0 +1,250 @@
+
+header {
+    background-color: #052553;
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icono {
+    border: 3px solid #0da9f5;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 35px;
+}
+
+.logo h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.logo h1 span,
+.marca span,
+footer span {
+    color: #08a9f5;
+}
+
+.logo p {
+    margin-top: 5px;
+}
+
+
+.marca {
+    border-left: 1px solid #178bd0;
+    padding-left: 40px;
+}
+
+.marca h2 {
+    color: #08a9f5;
+    font-size: 45px;
+    margin: 0;
+}
+
+.marca h3 {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.marca p {
+    color: #8bd8ff;
+}
+
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+.formulario {
+    background-color: white;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #d5dce5;
+}
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono {
+    background-color: #087ee8;
+    color: white;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.titulo h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.titulo p {
+    color: #687995;
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #168de8;
+    margin: 25px 0;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    font-size: 17px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+
+
+.fila {
+    display: flex;
+    gap: 30px;
+}
+
+.fila div {
+    width: 50%;
+}
+
+.ayuda {
+    color: #71819a;
+    font-size: 13px;
+}
+
+
+.inferior {
+    background-color: #f0f7ff;
+    margin: 30px -45px -35px;
+    padding: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seguridad {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.seguridad p {
+    margin: 5px 0;
+    color: #687995;
+    font-size: 13px;
+}
+
+
+.botones {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: white;
+    border: 1px solid #17366d;
+    color: #17366d;
+}
+
+.registrar {
+    background-color: #087ee8;
+    border: none;
+    color: white;
+}
+
+.registrar:hover {
+    background-color: #066dcc;
+}
+
+
+footer {
+    background-color: #052553;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+footer p {
+    color: #8bd8ff;
+}
+
+.iconos {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .marca {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .fila {
+        display: block;
+    }
+
+    .fila div {
+        width: 100%;
+    }
+
+    .inferior {
+        display: block;
+    }
+
+    .botones {
+        margin-top: 20px;
+    }
+
+    main {
+        width: 90%;
+    }
+}

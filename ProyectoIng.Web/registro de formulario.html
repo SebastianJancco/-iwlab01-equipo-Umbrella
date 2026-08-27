@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiLink - Registro de Solicitud</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+    
+            <div>
+                <h1>Servi<span>Link</span></h1>
+                
+            </div>
+        
+    </header>
+
+    <main>
+
+        <div class="formulario">
+
+            <div class="titulo">
+                <div class="icono">📄</div>
+
+                <div>
+                    <h2>Registro de Solicitud</h2>
+                    <p>
+                        Completa la información de tu solicitud para que
+                        los prestadores interesados puedan comunicarse contigo.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+
+            <form>
+                <label for="servicio">Servicio que requiere *</label>
+
+                <select id="servicio" name="servicio">
+                    <option value="">Selecciona el servicio que necesitas</option>
+                    <option>Gasfitería</option>
+                    <option>Electricidad</option>
+                    <option>Limpieza</option>
+                    <option>Carpintería</option>
+                    <option>Pintura</option>
+                    <option>Albañilería</option>
+                    <option>Jardinería</option>
+                    <option>Reparaciones</option>
+                    <option>Soporte tecnológico</option>
+                    <option>Otro</option>
+                </select>
+
+                <label for="distrito">Distrito del Cusco *</label>
+
+                <select id="distrito" name="distrito">
+                    <option value="">Selecciona el distrito</option>
+                    <option>Cusco</option>
+                    <option>Wanchaq</option>
+                    <option>Santiago</option>
+                    <option>San Sebastián</option>
+                    <option>San Jerónimo</option>
+                    <option>Poroy</option>
+                    <option>Saylla</option>
+                    <option>Ccorca</option>
+                </select>
+
+                <div class="fila">
+
+                    <div>
+                        <label for="fecha">Fecha requerida *</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+
+                    <div>
+                        <label for="hora">Horario requerido *</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+
+                </div>
+
+                <label for="descripcion">
+                    Describa su problema o necesidad *
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    placeholder="Explique brevemente qué necesita, qué problema presenta o qué trabajo desea realizar..."
+                ></textarea>
+
+                <p class="ayuda">
+                    Mientras más detalles proporciones, más fácil será que
+                    los prestadores comprendan tu solicitud.
+                </p>
+
+
+                <label for="telefono">Número de contacto *</label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ejemplo: 987654321"
+                >
+
+                <p class="ayuda">
+                    Este número será utilizado por las personas interesadas
+                    para comunicarse directamente contigo.
+                </p>
+
+                <div class="inferior">
+
+                    <div class="seguridad">
+                        🔒
+                        <div>
+                            <strong>Tu información está segura</strong>
+                            <p>
+                                Solo los prestadores interesados podrán
+                                ver tus datos de contacto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="botones">
+                        <button type="reset" class="cancelar">
+                            Cancelar
+                        </button>
+
+                        <button type="submit" class="registrar">
+                            Registrar solicitud
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <h2> <span>ServiLink</span> </h2>
+
+    
+    </footer>
+
+</body>
+</html>
+
