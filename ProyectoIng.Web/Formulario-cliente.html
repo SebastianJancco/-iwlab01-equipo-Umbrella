@@ -1,363 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ServiLink | Datos del Cliente</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registro de clientes en Servilink.">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <title>Registro de Cliente | Servilink</title>
 
-        body {
-            min-height: 100vh;
-            background: #f4f6f8;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background: white;
-            padding: 18px 8%;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        .logo span {
-            color: #111827;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-        }
-
-        .form-card {
-            background: white;
-            width: 100%;
-            max-width: 650px;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .form-card h1 {
-            text-align: center;
-            color: #111827;
-            margin-bottom: 8px;
-        }
-
-        .subtitulo {
-            text-align: center;
-            color: #6b7280;
-            margin-bottom: 30px;
-        }
-
-        .progreso {
-            margin-bottom: 30px;
-        }
-
-        .progreso-texto {
-            display: flex;
-            justify-content: space-between;
-            color: #6b7280;
-            font-size: 13px;
-            margin-bottom: 7px;
-        }
-
-        .barra {
-            width: 100%;
-            height: 8px;
-            background: #e5e7eb;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .barra-progreso {
-            width: 65%;
-            height: 100%;
-            background: #2563eb;
-        }
-
-        .fila {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
-
-        .campo {
-            margin-bottom: 20px;
-        }
-
-        .campo label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: 600;
-            color: #374151;
-        }
-
-        .campo input {
-            width: 100%;
-            padding: 13px;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 15px;
-            outline: none;
-            transition: 0.3s;
-        }
-
-        .campo input:focus {
-            border-color: #2563eb;
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
-        }
-
-        .ayuda {
-            font-size: 12px;
-            color: #6b7280;
-            margin-top: 5px;
-        }
-
-        .acciones {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .btn {
-            padding: 14px 24px;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-            flex: 1;
-        }
-
-        .btn-volver {
-            background: white;
-            color: #374151;
-            border: 1px solid #d1d5db;
-        }
-
-        .btn-crear {
-            background: #2563eb;
-            color: white;
-            border: none;
-        }
-
-        .btn-crear:hover {
-            background: #1d4ed8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 18px;
-            color: #6b7280;
-            font-size: 13px;
-        }
-
-        @media (max-width: 600px) {
-
-            .fila {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .form-card {
-                padding: 25px 20px;
-            }
-
-            .acciones {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">Servi<span>Link</span></div>
-</header>
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido principal
+  </a>
 
-<main>
+  <header class="site-header">
+    <div class="header-inner">
 
-    <section class="form-card">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Servilink, inicio"
+      >
+        Servilink
+      </a>
 
-        <h1>Completa tu perfil</h1>
+      <nav class="primary-nav" aria-label="Navegación principal">
 
-        <p class="subtitulo">
-            Ingresa tus datos para finalizar tu registro como cliente.
+        <a href="index.html">
+          Información General
+        </a>
+
+        <a href="solicitud.html">
+          Solicitar Servicio
+        </a>
+
+        <a href="trabajadores.html">
+          Trabajadores Disponibles
+        </a>
+
+        <a href="login.html">
+          Iniciar Sesión
+        </a>
+
+        <a
+          href="registro.html"
+          class="button button-nav"
+          aria-current="page"
+        >
+          Registrarse
+        </a>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="contenido" class="container auth-container">
+
+    <section
+      class="card auth-card"
+      aria-labelledby="registro-titulo"
+    >
+
+      <div class="auth-header">
+
+        <p class="eyebrow">
+          Paso 1 de 2
         </p>
 
-        <div class="progreso">
+        <h1 id="registro-titulo">
+          Crear cuenta como cliente
+        </h1>
 
-            <div class="progreso-texto">
-                <span>Datos personales</span>
-                <span>Paso 2 de 2</span>
-            </div>
+        <p class="lead">
+          Regístrate para encontrar profesionales
+          y solicitar servicios disponibles en tu zona.
+        </p>
 
-            <div class="barra">
-                <div class="barra-progreso"></div>
-            </div>
+      </div>
+
+
+      <div class="quality-note auth-note">
+
+        <strong>
+          Tipo de cuenta: Cliente
+        </strong>
+
+        <span>
+          Como cliente podrás buscar trabajadores,
+          revisar sus perfiles y solicitar servicios.
+        </span>
+
+      </div>
+
+
+      <form
+        id="formRegistro"
+        action="formulario-cliente.html"
+        method="GET"
+        class="form-grid"
+      >
+
+        <div class="form-group">
+
+          <label for="celular">
+            Número de celular
+          </label>
+
+          <input
+            type="tel"
+            id="celular"
+            name="celular"
+            placeholder="Ej. 987654321"
+            pattern="[0-9]{9}"
+            maxlength="9"
+            inputmode="numeric"
+            autocomplete="tel"
+            required
+          >
+
+          <small class="muted">
+            Ingresa un número de celular de 9 dígitos.
+          </small>
 
         </div>
 
-        <form id="formCliente">
 
-            <div class="fila">
+        <div class="form-group">
 
-                <div class="campo">
-                    <label for="nombre">Nombre</label>
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Ingresa tu nombre"
-                        required
-                    >
-                </div>
+          <label for="password">
+            Contraseña
+          </label>
 
-                <div class="campo">
-                    <label for="apellidos">Apellidos</label>
-                    <input
-                        type="text"
-                        id="apellidos"
-                        name="apellidos"
-                        placeholder="Ingresa tus apellidos"
-                        required
-                    >
-                </div>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingresa tu contraseña"
+            minlength="8"
+            autocomplete="new-password"
+            required
+          >
 
-            </div>
+          <small class="muted">
+            Debe contener como mínimo 8 caracteres.
+          </small>
 
-            <div class="fila">
+        </div>
 
-                <div class="campo">
-                    <label for="dni">DNI</label>
-                    <input
-                        type="text"
-                        id="dni"
-                        name="dni"
-                        placeholder="Ej. 12345678"
-                        pattern="[0-9]{8}"
-                        maxlength="8"
-                        required
-                    >
-                    <p class="ayuda">El DNI debe contener 8 dígitos.</p>
-                </div>
 
-                <div class="campo">
-                    <label for="email">Correo electrónico</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="ejemplo@correo.com"
-                        required
-                    >
-                </div>
+        <div class="form-group">
 
-            </div>
+          <label for="confirmar-password">
+            Confirmar contraseña
+          </label>
 
-            <div class="fila">
+          <input
+            type="password"
+            id="confirmar-password"
+            name="confirmar-password"
+            placeholder="Repite tu contraseña"
+            minlength="8"
+            autocomplete="new-password"
+            required
+          >
 
-                <div class="campo">
-                    <label for="password">Contraseña</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Ingresa una contraseña"
-                        minlength="8"
-                        required
-                    >
-                </div>
+        </div>
 
-                <div class="campo">
-                    <label for="confirmarPassword">
-                        Confirmar contraseña
-                    </label>
 
-                    <input
-                        type="password"
-                        id="confirmarPassword"
-                        name="confirmarPassword"
-                        placeholder="Repite tu contraseña"
-                        minlength="8"
-                        required
-                    >
-                </div>
+        <div class="actions auth-actions">
 
-            </div>
+          <button
+            type="submit"
+            class="button"
+          >
+            Continuar
+          </button>
 
-            <div class="acciones">
+        </div>
 
-                <button
-                    type="button"
-                    class="btn btn-volver"
-                    onclick="history.back()"
-                >
-                    Volver
-                </button>
+      </form>
 
-                <button
-                    type="submit"
-                    class="btn btn-crear"
-                >
-                    Crear cuenta
-                </button>
 
-            </div>
+      <div class="auth-footer">
 
-        </form>
+        <p class="muted">
+          ¿Ya tienes una cuenta?
+
+          <a href="login.html" class="text-link">
+            Iniciar sesión
+          </a>
+        </p>
+
+      </div>
 
     </section>
 
-</main>
+  </main>
 
-<footer>
-    © 2026 ServiLink - Plataforma de servicios locales
-</footer>
 
-<script>
+  <footer class="site-footer">
 
-    const formulario = document.getElementById("formCliente");
+    <p>
+      Prototipo académico · Ingeniería Web · Proyecto Semestral
+    </p>
 
-    formulario.addEventListener("submit", function(event) {
+  </footer>
 
-        event.preventDefault();
+
+  <script>
+
+    const formulario =
+      document.getElementById("formRegistro");
+
+    formulario.addEventListener(
+      "submit",
+      function(event) {
 
         const password =
-            document.getElementById("password").value;
+          document.getElementById("password").value;
 
         const confirmar =
-            document.getElementById("confirmarPassword").value;
+          document.getElementById("confirmar-password").value;
 
         if (password !== confirmar) {
 
-            alert("Las contraseñas no coinciden.");
-            return;
+          event.preventDefault();
+
+          alert("Las contraseñas no coinciden.");
 
         }
 
-        alert("Cuenta de cliente creada correctamente.");
+      }
+    );
 
-    });
-
-</script>
+  </script>
 
 </body>
 </html>
